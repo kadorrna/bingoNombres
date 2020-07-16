@@ -1,0 +1,33 @@
+/*
+  Add all your css styling here.
+*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.welcome {
+  margin-top: 5%;
+}
+#gameCard {
+  display: none;
+}
+.game {
+  display: none;
+  margin: 0 auto;
+  width: 50%;
+}
+#endGameText {
+  display: none;
+}
+#savePlayers {
+  margin-top: 10px;
+}
+#letter {
+  font-size: 90px;
+}
+.game-ended {
+  font-size: large;
+  color: red;
+}
