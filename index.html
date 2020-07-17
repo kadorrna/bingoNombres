@@ -46,26 +46,35 @@
     </div>
 
     <div class="game card" id="gameCard">
-      <div class="row-1 text-left">
-        <span>Letras que faltan salir:</span><br />
-        <p id="remainingLetters"></p>
+      <div class="row">
+        <div class="col text-center">
+          <span>Letras que faltan salir:</span>
+        </div>
+        <div class="col text-center">
+          <p id="remainingLetters"></p>
+        </div>
       </div>
-      <div class="row-1 text-left">
-        <span id="letter"></span>
+      <div class="row-1 text-center">
+        <span id="letter">&nbsp;</span>
       </div>
-      <div class="row-1 text-left">
+      <div class="row-1 text-center">
         <h1 id="endGameText">
           Termino!
         </h1>
       </div>
-      <div class="row-1 text-left">
+      <div class="row">
+        <div class="col text-center">
         <button onClick="popLetter()" id="letterButton" class="btn btn-primary">
           Sacar Letra
         </button>
+        </div>
+        <div class="col text-center">
         <button id="resetGame" onClick="resetGame()" class="btn btn-danger">
           Empezar de nuevo
         </button>
+        </div>
       </div>
+
     </div>
   </body>
 </html>
