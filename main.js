@@ -11,8 +11,8 @@ let playersArr = [];
 function startGame() {
   $("#savePlayers").prop("disabled", true);
   $("#players").prop("disabled", true);
-  players = $("#players").val().replace(/ /g, "");
-  players = players.replace(/[^a-zA-Z 0-9]+/g, "");
+  players = $("#players").val().toLowerCase().replace(/ /g, "")
+  players = players.replace(/[^a-zA-Z 0-9]+/g, "")
   for (var x = 0; x < players.length; x++) {
     if (playersArr.indexOf(players[x]) === -1) {
       playersArr.push(players[x]);
