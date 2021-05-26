@@ -17,6 +17,8 @@ body {
   display: none;
   margin: 0 auto;
   width: 50%;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 #endGameText {
   display: none;
@@ -30,4 +32,7 @@ body {
 .game-ended {
   font-size: large;
   color: red;
+}
+.tootipEstilado:hover {
+  cursor: pointer;
 }

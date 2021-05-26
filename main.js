@@ -18,14 +18,19 @@ function startGame() {
       playersArr.push(players[x]);
     }
   }
-  $("#remainingLetters").text(playersArr.join(", "));
+  $("#remainingLettersCount").text(playersArr.length)
+  $("#remainingLetters").tooltip("dispose").attr("title", remainingLetters()).tooltip()
   runEffect();
 }
+function remainingLetters() {
+  return playersArr.join(", ")
+}
 function popLetter() {
-  let magicNr = Math.floor(Math.random() * playersArr.length);
-  $("#letter").text(playersArr[magicNr]);
-  playersArr.splice(magicNr, 1);
-  $("#remainingLetters").text(playersArr.join(", "));
+  let magicNr = Math.floor(Math.random() * playersArr.length)
+  $("#letter").text(playersArr[magicNr])
+  playersArr.splice(magicNr, 1)
+  $("#remainingLettersCount").text(playersArr.length)
+  $("#remainingLetters").tooltip("dispose").attr("title", remainingLetters()).tooltip()
   if (playersArr.length === 0) {
     $("#letterButton").prop("disabled", true);
     $("#endGameText").show();
@@ -61,3 +66,4 @@ $("#savePlayers").on("click", function () {
   runEffect();
   return false;
 });
+

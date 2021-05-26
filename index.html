@@ -9,12 +9,18 @@
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
-    ></script>
+    ></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link
       href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
       rel="stylesheet"
     />
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" 
+      crossorigin="anonymous"
+    ></script>
+
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
@@ -49,10 +55,10 @@
     <div class="game card" id="gameCard">
       <div class="row">
         <div class="col text-center">
-          <span>Letras que faltan salir:</span>
+          <span>Letras que faltan salir:</span> <p id="remainingLettersCount"/>
         </div>
         <div class="col text-center">
-          <p id="remainingLetters"></p>
+          <span id="remainingLetters" data-toggle="tooltip" data-title="remainingLetters()"  data-placement="bottom" class="tootipEstilado"> letras restantes </span>
         </div>
       </div>
       <div class="row-1 text-center">
